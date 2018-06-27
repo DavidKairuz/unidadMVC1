@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Servicios";
+}
+<h2>Servicios</h2>
+
+<img scr="images/slack_rgb.png" width="150" height="150" />
+<style>
+    .fondo {
+        background: gray;
+    }
+
+    .borde {
+        border: 1px #000 solid
+    }
+</style>
+
+<style>
+    .slice {
+        background: url("wwwroot/images/androide.jpg");
+    }
+</style>
+
+
+
+<body>
+
+   <div class="container">
+        <div class="row">
+            <div class="col-md-4 borde">   </div>
+            <div class="col-md-4 borde">   </div>
+            <div class="col-md-4 borde">   </div>
+        </div>
+    </div>
+    <hr />
+
+    <hr />
+    <button class="btn fondo">Limpiar</button>
+    <div>   </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 borde">  1  </div>
+            <div class="col-lg-4 borde">  2  </div>
+            <div class="col-lg-4 borde">  3  </div>
+        </div>
+        <hr />
+    </div>
+
+    <button class="btn fondo">Aceptar</button>
+</body>
+
+
+
+
+<h3>@ViewData["Message"]</h3>

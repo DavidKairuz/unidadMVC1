@@ -1,0 +1,24 @@
+﻿@using Prode;
+@model Partido;
+@{
+    ViewData["Title"] = "Resultado";
+}
+
+<h2>Resultado</h2>
+
+@if (ViewBag.MostrarResultado)
+{
+    <div>
+        <strong>Equipos</strong> &nbsp; EquipoLocal :<strong> @ViewData["EquipoLocal"] vs @ViewData["EquipoVisitante"]</strong>
+    </div>
+
+    <h2>Resultado del partido : @ViewData["Resultado"]</h2>
+
+    <div>
+        <strong>Equipos</strong> &nbsp; EquipoLocal:<strong> @Model.EquipoLocal.Descripcion vs @Model.EquipoVisitante.Descripcion</strong>
+    </div>
+
+    <h2>Resultado del partido : @Model.InformacionResultado"]</h2>
+};
+
+
